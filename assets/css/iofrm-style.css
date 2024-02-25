@@ -311,7 +311,13 @@ html, body {
 
 .form-holder {
     margin-left: 550px;
-    width: 100%;
+    width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+    .form-holder {
+        width: 100%;
+    }
 }
 
 .form-holder .form-content {

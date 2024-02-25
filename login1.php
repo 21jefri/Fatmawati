@@ -7,9 +7,7 @@ if (isset($_POST['proses'])) {
     $user = strip_tags($_POST['user']);
     $pass = strip_tags($_POST['pass']);
 
-    $sql = 'SELECT *
-            FROM member
-            WHERE telepon = ? AND NIK = ? ';
+    $sql = 'SELECT * FROM member WHERE email = ? AND NIK = ? ';
     $stmt = $config->prepare($sql);
     $stmt->execute([$user, $pass]);
     $jum = $stmt->rowCount();
@@ -35,9 +33,7 @@ if (isset($_POST['proses'])) {
     <title>Login - UKK kasir</title>
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="sb-admin/css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -86,11 +82,10 @@ if (isset($_POST['proses'])) {
             </div>
         </div>
     </div>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
-
-
