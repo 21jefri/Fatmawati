@@ -52,7 +52,7 @@ $hasil_profil = $lihat->member_edit($id);
       <!-- bawaan -->
       <!-- template -->
       <!-- <div class="main-wrapper"> -->
-      <div class="header" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; z-index: 99999;">
+      <div class="header" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; z-index: 1002;">
         <div class="header-left">
           <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 5px; transform: translateY(-3px);">
             <span style="font-family: cursive; font-weight: 900; font-size: 32px; color: black; letter-spacing: -1px;">Kasir</span><span style="font-family: cursive; font-weight: 900; font-size: 32px;color: blue; letter-spacing: -1px;">Fatmawati</span>
@@ -108,6 +108,10 @@ $hasil_profil = $lihat->member_edit($id);
               <li class="submenu">
                 <a href="index.php?page=jual"><i class="feather-shopping-cart"></i></i>
                   <span> Keranjang</span></a>
+              </li>
+              <li class="submenu">
+                <a href="index.php?page=petugas"><i class="feather-user"></i></i>
+                  <span> Petugas</span></a>
               </li>
               <li class="submenu">
                 <a href="logout.php"><i class="feather-log-out text-danger"></i>

@@ -17,9 +17,7 @@ include 'konek.php';
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="sb-admin/css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -27,6 +25,7 @@ include 'konek.php';
     <link rel="stylesheet" type="text/css" href="assets/css/iofrm-style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/iofrm-theme9.css">
 </head>
+
 <body>
     <div class="form-body">
         <div class="row">
@@ -52,43 +51,40 @@ include 'konek.php';
                             <a href="login1.php">Login</a><a href="" class="active">Register</a>
                         </div>
                         <form action="" method="post">
-                        <input type="text" name="nm_member" class="form-control" placeholder="Nama Pegawai" required>
-                        <input type="text" name="alamat_member" class="form-control" placeholder="Alamat" required>
-                        <input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" required>
-                        <input type="email" name="email" class="form-control" placeholder="Email" required>
-                        <input type="file" name="gambar" class="form-control" placeholder="Upload Gambar" required>
-                        <input type="text" name="NIK" class="form-control" placeholder="NIK" required>
+                            <input type="text" name="nm_member" class="form-control" placeholder="Nama Pegawai" required>
+                            <input type="text" name="alamat_member" class="form-control" placeholder="Alamat" required>
+                            <input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" required>
+                            <input type="email" name="email" class="form-control" placeholder="Email" required>
+                            <input type="text" name="NIK" class="form-control" placeholder="NIK" required>
                             <div class="form-button">
                                 <button id="submit" type="submit" class="ibtn" name="submit" value="submit">Register</button>
                             </div>
                         </form>
                         <?php
-if (isset($_POST['submit'])) {
+                        if (isset($_POST['submit'])) {
 
-    $nm_member = $_POST['nm_member'];
-    $alamat_member = ucwords($_POST['alamat_member']);
-    $telepon = $_POST['telepon'];
-    $email = $_POST['email'];
-    $gambar = $_POST['gambar'];
-    $NIK = $_POST['NIK'];
+                            $nm_member = $_POST['nm_member'];
+                            $alamat_member = ucwords($_POST['alamat_member']);
+                            $telepon = $_POST['telepon'];
+                            $email = $_POST['email'];
+                            $NIK = $_POST['NIK'];
 
-    $insert = mysqli_query($conn, "INSERT INTO member VALUES (
+                            $insert = mysqli_query($conn, "INSERT INTO member VALUES (
              null,
                       '" . $nm_member . "',
                       '" . $alamat_member . "',
 					  '" . $telepon . "',
 					  '" . $email . "',
-					  '" . $gambar . "',
                       '" . $NIK . "')
             ");
-    if ($insert) {
-        echo '<script>alert("registrasi member berhasil")</script>';
-        echo '<script>window.location="login1.php";</script>';
-    } else {
-        echo 'gagal ' . mysqli_error($conn);
-    }
-}
-?>
+                            if ($insert) {
+                                echo '<script>alert("registrasi member berhasil")</script>';
+                                echo '<script>window.location="login1.php";</script>';
+                            } else {
+                                echo 'gagal ' . mysqli_error($conn);
+                            }
+                        }
+                        ?>
                         <div class="other-links">
                             <span>Or register with</span><a href="#">Facebook</a><a href="#">Google</a><a href="#">Linkedin</a>
                         </div>
@@ -98,13 +94,10 @@ if (isset($_POST['submit'])) {
         </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 
 </html>
-
-
-
