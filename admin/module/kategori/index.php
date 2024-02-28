@@ -1,4 +1,4 @@
-<div class="page-wrapper">
+<div class="page-wrapper mt-5">
 <h4>Kategori</h4>
 <br />
 <?php if (isset($_GET['success'])) {?>

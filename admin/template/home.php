@@ -22,19 +22,13 @@ if ($r > 0) {
 <?php $jual = $lihat->jual_row(); ?>
 
 <!-- template -->
-<div class="page-wrapper">
+<div class="page-wrapper" style="transform: translateY(-50px);">
   <div class="content container-fluid">
     <div class="page-header">
       <div class="row">
         <div class="col-sm-12">
           <div class="page-sub-header">
             <h3 class="page-title">Welcome Admin!</h3>
-            <ul class="breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="index.html">Home</a>
-              </li>
-              <li class="breadcrumb-item active">Admin</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -106,13 +100,8 @@ if ($r > 0) {
     <div class="row">
       <div class="col-xl-12 d-flex">
         <div class="card flex-fill student-space comman-shadow">
-          <div class="card-header d-flex align-items-center">
-            <h5 class="card-title">Star Students</h5>
-            <ul class="chart-list-out student-ellips">
-              <li class="star-menus">
-                <a href="javascript:;"><i class="fas fa-ellipsis-v"></i></a>
-              </li>
-            </ul>
+          <div class="card-header d-flex align-items-center" style="border-bottom: 1px solid #f3f3f3;">
+            <h5 class="card-title">Data Produk</h5>
           </div>
           <div class="card-body">
             <div class="table-responsive">
@@ -167,11 +156,11 @@ if ($r > 0) {
         </div>
       </div>
     </div>
+    <footer>
+      <p>COPYRIGHT © 2023 KASIR</p>
+    </footer>
   </div>
 
-  <footer>
-    <p>COPYRIGHT © 2023 DREAMSTECHNOLOGIES.</p>
-  </footer>
 </div>
 
 <!-- <div class="row">

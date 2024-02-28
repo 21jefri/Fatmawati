@@ -8,8 +8,7 @@
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
                 <span>
-                    <?php echo date('Y');?> - APlikasi Kasir UKK RPL |
-                    BY <b><a href="https://www.youtube.com/@ranyhaerunisa" target="_blank">Nama Lengkap</a></b>
+                    Kasir
                 </span>
             </div>
         </div>

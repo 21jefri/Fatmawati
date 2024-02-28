@@ -52,7 +52,7 @@ include 'konek.php';
                             <a href="login1.php">Login</a><a href="" class="active">Register</a>
                         </div>
                         <form action="" method="post">
-                        <input type="text" name="nm_member" class="form-control" placeholder="Nama Pelanggan" required>
+                        <input type="text" name="nm_member" class="form-control" placeholder="Nama Pegawai" required>
                         <input type="text" name="alamat_member" class="form-control" placeholder="Alamat" required>
                         <input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" required>
                         <input type="email" name="email" class="form-control" placeholder="Email" required>

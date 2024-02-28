@@ -2561,8 +2561,8 @@ footer p {
 }
 .page-wrapper {
 	margin-left: 259px;
-	padding-top: 60px;
 	position: relative;
+	padding-top: 0px !important;
 	transition: all 0.4s ease;
 }
 .page-wrapper > .content {
@@ -8820,6 +8820,7 @@ ol.breadcrumb.bg-secondary {
 		-moz-transition: all 0.4s ease;
 		transition: all 0.4s ease;
 		z-index: 1041;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 	.page-wrapper {
 		margin-left: 0;

@@ -2,7 +2,7 @@
 	$id = $_GET['barang'];
 	$hasil = $lihat -> barang_edit($id);
 ?>
-	<div class="page-wrapper">
+	<div class="page-wrapper mt-5">
  <a href="index.php?page=barang" class="btn btn-primary mb-3"><i class="fa fa-angle-left"></i> Balik </a>
  <h4>Edit Barang</h4>
  <?php if(isset($_GET['success'])){?>
